@@ -1,10 +1,4 @@
-##学习笔记
-
-#### 剑指 Offer 59 - I. 滑动窗口的最大值
-
-##### 解题思路：
-创建一个双端队列，数据从尾部入列，保持队列头部值是最大的，且值在窗口内
-···
+class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if(nums.length ==0 || k<=0){
             return new int[0];
@@ -34,4 +28,4 @@
          }
          return result;
     }
-···
+}
